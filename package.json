@@ -1,0 +1,20 @@
+{
+  "name": "cardetailingsite",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "A template for a a car detailing business",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyingsl0ths/cardetailingsite.git"
+  },
+  "author": "flyingsl0ths",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/flyingsl0ths/cardetailingsite/issues"
+  },
+  "homepage": "https://github.com/flyingsl0ths/cardetailingsite#readme"
+}
