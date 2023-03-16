@@ -4,7 +4,136 @@
   box-sizing: border-box;
 }
 
-#output {
+@font-face {
+  font-family: "Clarity City";
+  src: url("assets/fonts/regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Clarity City";
+  src: url("assets/fonts/bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+:root {
+  --primary-color: #09b7d0;
+  --text-color: #fff;
+  --secondary-color: #292d2e;
+  --txt-size-4: 1vw;
+}
+
+body {
+  font-family: "Clarity City";
+}
+
+#nav {
+  width: 100%;
+  background: var(--secondary-color);
+  padding: 2em;
+}
+
+#logo {
+  color: var(--text-color);
+}
+
+#home-welcome {
+  background-image: url("assets/hero.jpg");
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 100px var(--secondary-color);
+  width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+  padding: 12em 5em 10em 5em;
+  color: var(--text-color);
+}
+
+#home-welcome--heading {
+  font-size: 2.3vw;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.centered-items {
+  align-items: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.bold-txt {
+  font-weight: bold;
+}
+
+.spacer-r-m {
+  margin: 0 60% 0 0;
+}
+
+.links a {
+  color: var(--text-color);
+  font-size: var(--txt-size-4);
+  font-style: italic;
+  font-weight: bold;
+  padding: 0.6em;
+  text-decoration: none;
+}
+
+.link-btn {
+  background: var(--primary-color);
+  color: var(--text-color);
+  font-size: var(--txt-size-4);
+  font-style: italic;
+  font-weight: bold;
+  padding: 1.5em 0;
+  text-decoration: none;
   text-align: center;
-  margin: 40vh auto auto auto;
+  width: 30%;
+}
+
+.mg-left-m {
+  margin-left: 5em;
+}
+
+.vbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  color: var(--text-color);
+  width: 10%;
+  height: 50%;
+  margin-right: 1em;
+}
+
+.section-header {
+  font-size: 1.5vw;
+}
+
+.mg-a-s {
+  margin: 1.25em 0;
+}
+
+.txt-box {
+  width: 40%;
+  font-size: 1vw;
+}
+
+.spacer-s {
+  margin: 1em;
+}
+
+.outlined-link-btn {
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  font-size: var(--txt-size-4);
+  font-style: italic;
+  font-weight: bold;
+  padding: 1.5em 0;
+  text-decoration: none;
+  text-align: center;
+  width: 30%;
 }

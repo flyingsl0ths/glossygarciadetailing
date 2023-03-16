@@ -7,37 +7,51 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <img src="" alt="Company logo" />
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-      </ul>
-      <a class="link-btn" href="#">CONTACT US</a>
+    <nav id="nav">
+      <div class="hbox space-around">
+        <img
+          id="logo"
+          class="bold-txt"
+          src=""
+          alt="Company logo"
+          width="115"
+          height="30"
+        />
+        <div class="spacer-r-m"></div>
+        <div class="hbox links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a class="link-btn mg-left-m" href="#">CONTACT US</a>
+        </div>
+      </div>
     </nav>
 
-    <section id="home--welcome">
+    <section id="home-welcome">
       <div class="vbox">
-        <div class="hbox">
-          <div class="line"></div>
-          <h4>COMPANY NAME</h4>
+        <div class="hbox centered-items">
+          <hr class="line" />
+          <h4 class="bold-txt section-header">Glossy Garcia's Detaling</h4>
         </div>
-        <h1>"CHASING PAINT <span>PERFECTION"</span></h1>
-        <p>
-          Here at Nate's Detail Garage we take pride in our work. With immense
-          attention to detail, persistance, and passion you can expect your
-          vehicle to be looking as clean as can be. Whether that be a simple
-          Maintenance Wash or a Ceramic Coating, we got you covered! Located in
-          Orange County, CA
+        <h1 id="home-welcome--heading" class="bold-txt mg-a-s">
+          "CHASING PAINT <span>PERFECTION"</span>
+        </h1>
+        <p class="txt-box">
+          Here at Glossy Garcia's Detail Garage we take pride in our work. With
+          immense attention to detail, persistance, and passion you can expect
+          your vehicle to be looking as clean as can be. Whether that be a
+          simple Maintenance Wash or a Ceramic Coating, we got you covered!
+          Located in Orange County, CA
         </p>
-
-        <a class="link-btn" href="#">SCHEDULE AN APPOINTMENT</a>
-        <a class="outlined-link-btn" href="#">BROWSE SERVICES</a>
+        <div class="hbox mg-a-s">
+          <a class="link-btn" href="#">SCHEDULE AN APPOINTMENT</a>
+          <div class="spacer-s"></div>
+          <a class="outlined-link-btn" href="#">BROWSE SERVICES</a>
+        </div>
       </div>
     </section>
 
-    <section home--services>
+    <section home-services>
       <div class="vbox">
         <div class="hbox">
           <div class="line"></div>
@@ -56,7 +70,7 @@
       </div>
     </section>
 
-    <section id="home--why-us">
+    <section id="home-why-us">
       <div class="hbox">
         <div class="vbox">
           <img src="" alt="" />
@@ -69,7 +83,7 @@
             <h4>WHY US</h4>
           </div>
           <h1>WHAT MAKES US DIFFERENT?</h1>
-          <p>
+          <p class="txt-box">
             We started with the idea of bringing the best details through body
             shop safe products, expertise, and our passion for detailing. We
             offer all services for vehicles from our Basic Details to our 4 Year
@@ -84,7 +98,7 @@
             <img src="" alt="" />
             <div class="vbox">
               <h4>BEST QUALITY PARTS</h4>
-              <p>
+              <p class="txt-box">
                 We only use products that have been proven and tested to yield
                 the best results possible for your vehicle, inside and out.
               </p>
@@ -95,7 +109,7 @@
       </div>
     </section>
 
-    <section id="home--testimonials">
+    <section id="home-testimonials">
       <div class="vbox">
         <img src="" alt="" />
         <div class="hbox">
@@ -113,13 +127,13 @@
       </div>
     </section>
 
-    <section id="home--packages">
+    <section id="home-packages">
       <div class="vbox">
         <h4>PACKAGES</h4>
         <h1 id="pkg" class="outline">PACKAGES</h1>
         <h1>DETAILS FOR ALL</h1>
         <h1>VEHICLE CONDITIONS</h1>
-        <p></p>
+        <p class="txt-box"></p>
         <h4>PRICES MAY VERY DEPENDING ON CONDITION & SIZE OF YOUR VEHICLE</h4>
         <div class="hbox">
           <div class="package"></div>
