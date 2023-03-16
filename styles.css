@@ -50,6 +50,10 @@ body {
   font-size: 2.3vw;
 }
 
+#home-services {
+  padding: 12em 5em 10em 5em;
+}
+
 .hbox {
   display: flex;
   flex-direction: row;
@@ -142,4 +146,9 @@ body {
 
 .primary-clr {
   color: var(--primary-color);
+}
+
+.outline {
+  -webkit-text-stroke: 2px black;
+  color: white;
 }
