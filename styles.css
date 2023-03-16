@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: "Clarity City";
   src: url("assets/fonts/regular.ttf") format("truetype");
@@ -15,13 +9,18 @@
   font-weight: bold;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary-color: #09b7d0;
   --text-color: #fff;
   --secondary-color: #292d2e;
   --txt-size-4: 1vw;
 }
-
 body {
   font-family: "Clarity City";
 }
@@ -102,8 +101,11 @@ body {
   flex-direction: column;
 }
 
-.line {
+.txt-clr {
   color: var(--text-color);
+}
+
+.line {
   width: 10%;
   height: 50%;
   margin-right: 1em;
@@ -136,4 +138,8 @@ body {
   text-decoration: none;
   text-align: center;
   width: 30%;
+}
+
+.primary-clr {
+  color: var(--primary-color);
 }
