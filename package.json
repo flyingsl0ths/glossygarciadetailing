@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/flyingsl0ths/cardetailingsite/issues"
   },
-  "homepage": "https://github.com/flyingsl0ths/cardetailingsite#readme"
+  "homepage": "https://github.com/flyingsl0ths/cardetailingsite#readme",
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  }
 }
