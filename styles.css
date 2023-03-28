@@ -15,42 +15,86 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 :root {
-  --primary-color: #09b7d0;
+  --primary-color: #c41919;
   --text-color: #fff;
-  --secondary-color: #292d2e;
+  --secondary-color: #18191a;
   --txt-size-4: 1vw;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Clarity City";
+  background-color: var(--text-color);
 }
 
 #nav {
   width: 100%;
   background: var(--secondary-color);
-  padding: 2em;
+  padding: 1em 2em;
 }
 
 #logo {
   color: var(--text-color);
 }
 
-#home-welcome {
+#about {
   background-image: url("assets/hero.jpg");
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
   background-size: 100% 100%;
-  padding: 12em 5em 10em 5em;
   color: var(--text-color);
 }
 
-#home-welcome--heading {
+#welcome-heading {
   font-size: 2.3vw;
 }
 
-#home-services {
-  padding: 12em 5em 10em 5em;
+#why-us {
+  background-color: var(--secondary-color);
+}
+
+#why-us-img {
+  width: 70%;
+  height: 100%;
+}
+
+#random-shape {
+  position: relative;
+  top: -10em;
+  left: -2em;
+  width: 35%;
+  height: 35%;
+}
+
+#testimonials {
+  background-color: var(--secondary-color);
+}
+
+#footr {
+  font-size: 1vw;
+}
+
+#index {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2em;
+}
+
+#index a {
+  padding: 0.6em 0.6em 0.6em 0;
+}
+
+.section-pd {
+  padding: 7.5em 5em;
 }
 
 .hbox {
@@ -97,6 +141,7 @@ body {
   text-decoration: none;
   text-align: center;
   width: 30%;
+  height: 100%;
 }
 
 .mg-left-m {
@@ -112,14 +157,20 @@ body {
   color: var(--text-color);
 }
 
+.txt-clr-bg {
+  background-color: var(--text-color);
+}
+
 .line {
   width: 10%;
-  height: 50%;
+  height: 5px;
+  border-radius: 1px;
   margin-right: 1em;
+  border: none;
 }
 
 .header {
-  font-size: 1.1vw;
+  font-size: 1.25vw;
   font-style: italic;
 }
 
@@ -152,17 +203,38 @@ body {
   color: var(--primary-color);
 }
 
+.secondary-clr {
+  color: var(--secondary-color);
+}
+
+.primary-clr-bg {
+  background-color: var(--primary-color);
+}
+
 .outline {
   -webkit-text-stroke: 2px black;
-  color: white;
   font-size: 8vw;
   font-style: italic;
 }
 
-.offset-left {
+.stroke-white {
+  -webkit-text-stroke: 2px var(--text-color);
+}
+
+.offset-right {
   position: relative;
-  left: 3.5em;
+  left: 3.25em;
   top: 0.3em;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.carousel-btn {
+  margin: 0.5em;
+  width: 7%;
+  height: 7%;
 }
 
 .large-txt {
@@ -170,7 +242,7 @@ body {
 }
 
 .half {
-  width: 48%;
+  width: 50%;
 }
 
 .black {
@@ -179,7 +251,7 @@ body {
 }
 
 .carousel {
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   margin-bottom: 1em;
 }
@@ -190,7 +262,7 @@ body {
   width: 100%;
   height: 30%;
   font-size: 1vw;
-  margin: 0.5em;
+  margin: 0.6em;
 }
 
 .card-txt {
@@ -205,9 +277,144 @@ body {
 
 .card-img {
   width: 25vw;
-  height: 25em;
+  height: 25vw;
 }
 
 .italics {
   font-style: italic;
+}
+
+.front {
+  z-index: 1;
+}
+
+.back {
+  z-index: 0;
+}
+
+.offset-nw {
+  position: relative;
+  top: 0.35em;
+}
+
+.flex-start {
+  align-self: flex-start;
+}
+
+.txt-box-m {
+  width: 95%;
+  font-size: 1.5vw;
+}
+
+.mg-btm-xs {
+  margin-bottom: 0.8em;
+}
+
+.mg-btm-s {
+  margin-bottom: 1.5em;
+}
+
+.mg-btm-m {
+  margin-bottom: 2em;
+}
+
+.icon {
+  width: 12%;
+  margin: 1em;
+}
+
+.offset-left {
+  position: relative;
+  left: -0.5em;
+}
+
+.mg-a-m {
+  margin: 2em 0;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.icon-s {
+  width: 10%;
+  height: 10%;
+}
+
+.pd-s {
+  padding: 1.5em;
+}
+
+.fixed-txt-box {
+  width: 40%;
+  height: 40%;
+}
+
+.right-triangle {
+  border-bottom: 60px solid var(--secondary-color);
+  border-right: 60px solid var(--text-color);
+  width: 50%;
+}
+
+.secondary-clr-bg {
+  background-color: var(--secondary-color);
+}
+
+.pd-m {
+  padding: 3em;
+}
+
+.mg-left-s {
+  margin-left: 1.5em;
+}
+
+.pd-top-s {
+  padding-top: 1em;
+}
+
+.medium-txt {
+  font-size: 1.25vw;
+}
+
+.package {
+  width: 30%;
+  height: 80%;
+}
+
+.slide-up {
+  animation: slide 0.6s ease-in-out;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+  transform: translateY(160px);
+  transition: all 2s ease-in-out;
+}
+
+.reveal.pop-in {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(120px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0.5;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

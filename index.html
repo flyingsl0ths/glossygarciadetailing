@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Company Name</title>
+    <title>Glossy Garcia's Detailing</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
     <nav id="nav">
-      <div class="hbox space-around">
+      <div class="hbox centered-items">
         <img
           id="logo"
-          class="bold-txt"
-          src=""
+          src="assets/logo.png"
           alt="Company logo"
-          width="115"
-          height="30" />
+          width="135"
+          height="95" />
+
         <div class="spacer-r-m"></div>
         <div class="hbox links">
           <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
           <a class="link-btn mg-left-m" href="#">CONTACT US</a>
         </div>
       </div>
     </nav>
 
-    <section id="home-welcome" class="vignette">
-      <div class="vbox">
+    <section id="about" class="vignette section-pd">
+      <div class="vbox slide-up">
         <div class="hbox centered-items">
-          <hr class="line txt-clr" />
+          <hr class="line txt-clr-bg" />
           <h4 class="bold-txt header">Glossy Garcia's Detaling</h4>
         </div>
-        <h1 id="home-welcome--heading" class="bold-txt mg-a-s">
+        <h1 id="welcome-heading" class="bold-txt mg-a-s">
           "CHASING PAINT <span>PERFECTION"</span>
         </h1>
-        <p class="txt-box">
+        <p class="half med-txt">
           Here at Glossy Garcia's Detail Garage we take pride in our work. With
           immense attention to detail, persistance, and passion you can expect
           your vehicle to be looking as clean as can be. Whether that be a
@@ -45,28 +45,39 @@
         <div class="hbox mg-a-s">
           <a class="link-btn" href="#">SCHEDULE AN APPOINTMENT</a>
           <div class="spacer-s"></div>
-          <a class="outlined-link-btn" href="#">BROWSE SERVICES</a>
+          <a class="outlined-link-btn" href="#services">BROWSE SERVICES</a>
         </div>
       </div>
     </section>
 
-    <section id="home-services">
-      <div class="vbox">
+    <section id="services" class="section-pd">
+      <div class="vbox reveal">
         <div class="hbox centered-items">
-          <hr class="line primary-clr" />
+          <hr class="line primary-clr-bg" />
           <h4 class="primary-clr header">SERVICES</h4>
-          <h1 class="outline offset-left">SERVICES</h1>
-        </div>
-        <div class="hbox">
-          <h1 class="mg-a-s large-txt bold-txt half">
-            WE OFFER A WIDE RANGE OF CAR SERVICES
-          </h1>
-          <a href="#"></a>
-          <a href="#"><img src="" alt="" /></a
-          ><a href="#"><img src="" alt="" /></a>
+          <h1 class="outline txt-clr offset-right">SERVICES</h1>
         </div>
 
-        <div class="hbox carousel">
+        <h1 class="mg-a-s large-txt bold-txt half">
+          WE OFFER A WIDE RANGE OF CAR SERVICES
+        </h1>
+
+        <div id="services-ctrls" class="hbox end">
+          <a class="carousel-btn"
+            ><img
+              data-dir="prev"
+              src="assets/icons/arrow-left-thick.svg"
+              alt=""
+          /></a>
+          <a class="carousel-btn"
+            ><img
+              data-dir="next"
+              src="assets/icons/arrow-right-thick.svg"
+              alt=""
+          /></a>
+        </div>
+
+        <div id="srvices" class="hbox carousel">
           <div class="card">
             <img
               src="assets/wash.jpg"
@@ -78,7 +89,7 @@
                 Keep your vehicle in excellent condition.
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr" />
+                <hr class="line txt-clr-bg" />
                 <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
               </div>
             </div>
@@ -96,7 +107,7 @@
                 protected
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr" />
+                <hr class="line txt-clr-bg" />
                 <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
               </div>
             </div>
@@ -114,7 +125,7 @@
                 protection application
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr" />
+                <hr class="line txt-clr-bg" />
                 <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
               </div>
             </div>
@@ -131,7 +142,7 @@
                 The highest level of protection for your vehicle
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr" />
+                <hr class="line txt-clr-bg" />
                 <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
               </div>
             </div>
@@ -141,7 +152,7 @@
             <img
               src="assets/headlights.jpg"
               alt="A person washing a car"
-              class="card-img" />
+              class="card-img vignette" />
             <div class="vbox card-txt">
               <h4 class="bold-txt italics txt-clr">HEADLIGHT RESTORATION</h4>
               <p class="txt-clr mg-a-s">
@@ -150,7 +161,7 @@
                 customer via email
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr" />
+                <hr class="line txt-clr-bg" />
                 <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
               </div>
             </div>
@@ -160,7 +171,7 @@
             <img
               src="assets/interior.jpg"
               alt="A person washing a car"
-              class="card-img" />
+              class="card-img vignette" />
             <div class="vbox card-txt">
               <h4 class="bold-txt italics txt-clr">INTERIOR DETAIL</h4>
               <p class="txt-clr mg-a-s">
@@ -168,7 +179,7 @@
                 disinfection of surfaces
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr" />
+                <hr class="line txt-clr-bg" />
                 <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
               </div>
             </div>
@@ -177,125 +188,215 @@
 
         <div class="hbox mg-a-s">
           <a class="link-btn" href="#">SCHEDULE AN APPOINTMENT</a>
-          <div class="spacer-s"></div>
-          <a class="outlined-link-btn black" href="#">BROWSE SERVICES</a>
+          <!-- <div class="spacer-s"></div> -->
+          <!-- <a class="outlined-link-btn black" href="#">BROWSE SERVICES</a> -->
         </div>
       </div>
     </section>
 
-    <section id="home-why-us">
-      <div class="hbox">
+    <section id="why-us" class="section-pd">
+      <div class="hbox txt-clr reveal">
         <div class="vbox">
-          <img src="" alt="" />
-          <div class="random-shape1"></div>
+          <img id="why-us-img" src="assets/washer.jpg" alt="" />
+          <img id="random-shape" src="assets/trapezoid.svg" />
         </div>
 
         <div class="vbox">
-          <div class="hbox">
-            <div class="line"></div>
-            <h4>WHY US</h4>
+          <h1 class="outline stroke-white offset-nw back secondary-clr">
+            WHY US
+          </h1>
+
+          <div class="hbox centered-items front">
+            <hr class="line txt-clr-bg" />
+            <h4 class="bold-txt header">WHY US</h4>
           </div>
-          <h1>WHAT MAKES US DIFFERENT?</h1>
-          <p class="txt-box">
+
+          <h1 class="mg-a-s large-txt bold-txr">WHAT MAKES US DIFFERENT?</h1>
+
+          <p class="txt-box-m mg-btm-s">
             We started with the idea of bringing the best details through body
             shop safe products, expertise, and our passion for detailing. We
             offer all services for vehicles from our Basic Details to our 4 Year
             Ceramic Coating Packages. All of our details are handled with great
             care and a personalized experience for every single client.
           </p>
-          <div class="hbox">
-            <img src="" alt="" />
-            <h4>4+ YEARS OF EXPERIENCE</h4>
-          </div>
-          <div class="hbox">
-            <img src="" alt="" />
-            <div class="vbox">
-              <h4>BEST QUALITY PARTS</h4>
-              <p class="txt-box">
-                We only use products that have been proven and tested to yield
-                the best results possible for your vehicle, inside and out.
-              </p>
+
+          <div class="vbox">
+            <div class="hbox centered-items">
+              <img
+                class="icon"
+                src="assets/icons/trophy-variant-outline.svg"
+                alt="" />
+              <h4>4+ YEARS OF EXPERIENCE</h4>
             </div>
+
+            <div class="hbox centered-items mg-btm-m">
+              <img class="icon" src="assets/icons/cog-outline.svg" alt="" />
+              <div class="vbox">
+                <h4 class="mg-btm-xs">BEST QUALITY PARTS</h4>
+                <p class="txt-box-m">
+                  We only use products that have been proven and tested to yield
+                  the best results possible for your vehicle, inside and out.
+                </p>
+              </div>
+            </div>
+            <a class="link-btn half" href="#">SCHEDULE AN APPOINTMENT</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section-pd">
+      <div class="vbox reveal">
+        <h1 class="secondary-clr outline stroke-white offset-left back">
+          TESTIMONIALS
+        </h1>
+        <div class="hbox centered-items front mg-a-m">
+          <hr class="line primary-clr-bg" />
+          <h4 class="primary-clr bold-txt header">TESTIMONIALS</h4>
+        </div>
+
+        <div class="hbox space-between mg-btm-m">
+          <h2 class="large-txt half txt-clr">WHAT OUR CLIENTS SAY ABOUT US</h2>
           <a class="link-btn" href="#">SCHEDULE AN APPOINTMENT</a>
         </div>
-      </div>
-    </section>
 
-    <section id="home-testimonials">
-      <div class="vbox">
-        <img src="" alt="" />
-        <div class="hbox">
-          <div class="line"></div>
-          <h4>TESTIMONIALS</h4>
-        </div>
-        <div class="hbox">
-          <div class="vbox">
-            <h2>WHAT OUR CLIENTS</h2>
-            <h2>SAY ABOUT US</h2>
+        <div id="tstimonials" class="hbox carousel">
+          <div class="card txt-clr-bg pd-s round-bdr space-between">
+            <div class="hbox mg-btm-s">
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+            </div>
+            <h4 class="bold-txt">Isaac Doorbrick</h4>
+            <h3>Orange County, CA</h3>
+            <p class="mg-a-s">
+              Amazing job! My dirty work van interior looks brand new now.
+              Definitely going to be a regular
+            </p>
           </div>
-          <a class="link-btn" href="#">SCHEDULE AN APPOINTMENT</a>
+
+          <div class="card txt-clr-bg pd-s round-bdr space-between">
+            <div class="hbox mg-btm-s">
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+            </div>
+            <h4 class="bold-txt">Madeline Delgado</h4>
+            <h3>Orange County, CA</h3>
+            <p class="mg-a-s">
+              Wow! They made my 2006 Mercedes look brand new. Affordable prices
+              and great service
+            </p>
+          </div>
+          <div class="card txt-clr-bg pd-s round-bdr space-between">
+            <div class="hbox mg-btm-s">
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+              <img class="icon-s" src="assets/icons/star.svg" alt="" />
+            </div>
+            <h4 class="bold-txt">Mario Lopez</h4>
+            <h3>Orange County, CA</h3>
+            <p class="mg-a-s">
+              I drive a classic car, so there is tons of debris and build up all
+              over my car and no one does it better than Glossy Garcia's, real
+              good people, honest and charismatic. Keep up the good work guys!
+            </p>
+          </div>
         </div>
-        <div class="carousel"></div>
+
+        <!-- <div id="testimonials-ctrls" class="hbox end"> -->
+        <!--   <a class="carousel-btn" -->
+        <!--     ><img -->
+        <!--       data-dir="prev" -->
+        <!--       src="assets/icons/w-arrow-left-thick.svg" -->
+        <!--       alt="" -->
+        <!--   /></a> -->
+        <!--   <a class="carousel-btn" -->
+        <!--     ><img -->
+        <!--       data-dir="next" -->
+        <!--       src="assets/icons/w-arrow-right-thick.svg" -->
+        <!--       alt="" -->
+        <!--   /></a> -->
+        <!-- </div> -->
       </div>
     </section>
 
-    <section id="home-packages">
-      <div class="vbox">
-        <h4>PACKAGES</h4>
-        <h1 id="pkg" class="outline">PACKAGES</h1>
-        <h1>DETAILS FOR ALL</h1>
-        <h1>VEHICLE CONDITIONS</h1>
-        <p class="txt-box"></p>
-        <h4>PRICES MAY VERY DEPENDING ON CONDITION & SIZE OF YOUR VEHICLE</h4>
+    <section id="packages" class="section-pd">
+      <div class="vbox centered-items reveal">
+        <h1 class="outline txt-clr offset-right">PACKAGES</h1>
+
+        <h4 class="bold-txt primary-clr">PACKAGES</h4>
+
+        <h2 class="large-txt bold-txt">DETAILS FOR ALL VEHICLE CONDITIONS</h2>
+
+        <p class="med-txt half mg-a-s">
+          We offer 3 main packages in our detailing garage, all of which will
+          ensure that your vehicle becomes clean as possible. In addition to
+          these packages, you will have the option to select any of our add-on
+          packages.
+        </p>
+
+        <h4 class="bold-txt primary-clr">
+          PRICES MAY VERY DEPENDING ON CONDITION & SIZE OF YOUR VEHICLE
+        </h4>
         <div class="hbox">
           <div class="package"></div>
           <div class="package"></div>
           <div class="package"></div>
         </div>
       </div>
-
-      <div class="half-bar"></div>
     </section>
 
-    <footer>
-      <div class="vbox">
-        <div class="hbox">
-          <div class="hbox">
-            <h4>Menu</h4>
-            <div class="line"></div>
+    <div class="right-triangle"></div>
+
+    <footer id="footr" class="txt-clr secondary-clr-bg pd-m">
+      <div class="hbox">
+        <div class="vbox">
+          <div class="hbox centered-items">
+            <h4>MENU</h4>
+            <hr class="line primary-clr-bg half mg-left-s" />
           </div>
 
-          <div class="index">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">SERVICES</a>
-            <a href="#">PACKAGES</a>
-            <a href="#">CONTACT</a>
+          <div id="index" class="links pd-top-s">
+            <a href="#" onclick="() => window.scrollTo(0, 0)">HOME</a>
+            <a href="#home-about">ABOUT</a>
+            <a href="#home-services">SERVICES</a>
+            <a href="#home-packages">PACKAGES</a>
+            <a href="#home-contact">CONTACT</a>
           </div>
         </div>
 
-        <div class="hbox">
-          <div class="hbox">
+        <div class="spacer-s"></div>
+
+        <div class="vbox">
+          <div class="hbox centered-items">
             <h4>CONTACT US</h4>
-            <div class="line"></div>
+            <hr class="line primary-clr-bg half mg-left-s" />
           </div>
-          <div class="vbox">
-            <a class="link-icon">
-              <div class="labeled-icon">
-                <img src="" alt="" />
+
+          <div class="vbox pd-top-s">
+            <a href="tel:(123)456-7891">
+              <div>
+                <img
+                  class="icon-s"
+                  src="assets/icons/phone-outline.svg"
+                  alt="" />
                 <h3></h3>
               </div>
             </a>
-            <a class="link-icon">
-              <div class="labeled-icon">
-                <img src="" alt="" />
-                <h3></h3>
-              </div>
-            </a>
-            <a class="link-icon">
-              <div class="labeled-icon">
-                <img src="" alt="" />
+            <a href="mailto:glossygarcia@gmail.com">
+              <div>
+                <img
+                  class="icon-s"
+                  src="assets/icons/email-outline.svg"
+                  alt="" />
                 <h3></h3>
               </div>
             </a>
