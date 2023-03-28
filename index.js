@@ -16,8 +16,8 @@ function reveal() {
 }
 
 const state = {
-  servicesCarouselScroll: 0,
-  testimonialsCarouselScroll: 0
+  servicesCarouselScroll: 0
+  // testimonialsCarouselScroll: 0
 };
 
 function computeScrollOffset(
