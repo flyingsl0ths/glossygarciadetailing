@@ -265,6 +265,10 @@ body {
   margin: 0.6em;
 }
 
+.slide-up:hover {
+  animation: slide-up 0.6s ease-out forwards;
+}
+
 .card-txt {
   position: absolute;
   font-size: 1vw;
@@ -319,7 +323,7 @@ body {
 }
 
 .icon {
-  width: 12%;
+  width: 5em;
   margin: 1em;
 }
 
@@ -379,10 +383,10 @@ body {
 .package {
   width: 30%;
   height: 80%;
-}
-
-.slide-up {
-  animation: slide 0.6s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1.5em;
+  width: 80%;
+  height: 100%;
 }
 
 .reveal {
@@ -395,6 +399,43 @@ body {
 .reveal.pop-in {
   opacity: 1;
   transform: translateY(0px);
+}
+
+.four-by-four-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 3em;
+}
+
+.no-list-decorations {
+  list-style-type: none;
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.pd-xs {
+  padding: 0.5em;
+}
+
+.s-icon {
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0.5em;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.no-txt-decorations {
+  text-decoration: none;
+}
+
+.mg-btm-m {
+  margin-bottom: 3em;
 }
 
 @keyframes slide {
@@ -416,5 +457,25 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: var(--text-color);
+  }
+
+  100% {
+    color: var(--primary-color);
   }
 }

@@ -1,5 +1,16 @@
 window.addEventListener("scroll", reveal);
 
+document
+  .querySelectorAll(".to-top")
+  .forEach(element =>
+    element.addEventListener("pointerdown", () => window.scrollTo(0, 0))
+  );
+
+document.getElementById("contact-email").addEventListener("pointerdown", () => {
+  alert("Copied!");
+  navigator.clipboard.writeText("glossygarcia@gmail.com");
+});
+
 function reveal() {
   let targets = document.querySelectorAll(".reveal");
 
