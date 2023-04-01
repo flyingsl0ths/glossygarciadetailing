@@ -7,7 +7,7 @@ document
   );
 
 document.getElementById("contact-email").addEventListener("pointerdown", () => {
-  alert("Copied!");
+  alert("Email copied to clipboard!");
   navigator.clipboard.writeText("glossygarcia@gmail.com");
 });
 

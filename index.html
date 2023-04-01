@@ -27,7 +27,7 @@
     </nav>
 
     <section id="about" class="vignette section-pd">
-      <div class="vbox slide-up">
+      <div class="vbox slide-in">
         <div class="hbox centered-items">
           <hr class="line txt-clr-bg" />
           <h4 class="bold-txt header">Glossy Garcia's Detaling</h4>
@@ -43,7 +43,7 @@
           Located in Orange County, CA
         </p>
         <div class="hbox mg-a-s">
-          <a class="link-btn" href="#">SCHEDULE AN APPOINTMENT</a>
+          <a class="link-btn" href="#contact">SCHEDULE AN APPOINTMENT</a>
           <div class="spacer-s"></div>
           <a class="outlined-link-btn" href="#services">BROWSE SERVICES</a>
         </div>
@@ -89,8 +89,8 @@
                 Keep your vehicle in excellent condition.
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr-bg" />
-                <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
+                <!-- <hr class="line txt-clr-bg" /> -->
+                <!-- <h4 class="txt-clr bold-txt header">LEARN MORE</h4> -->
               </div>
             </div>
           </div>
@@ -107,8 +107,8 @@
                 protected
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr-bg" />
-                <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
+                <!-- <hr class="line txt-clr-bg" /> -->
+                <!-- <h4 class="txt-clr bold-txt header">LEARN MORE</h4> -->
               </div>
             </div>
           </div>
@@ -125,8 +125,8 @@
                 protection application
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr-bg" />
-                <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
+                <!-- <hr class="line txt-clr-bg" /> -->
+                <!-- <h4 class="txt-clr bold-txt header">LEARN MORE</h4> -->
               </div>
             </div>
           </div>
@@ -142,8 +142,8 @@
                 The highest level of protection for your vehicle
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr-bg" />
-                <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
+                <!-- <hr class="line txt-clr-bg" /> -->
+                <!-- <h4 class="txt-clr bold-txt header">LEARN MORE</h4> -->
               </div>
             </div>
           </div>
@@ -161,8 +161,8 @@
                 customer via email
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr-bg" />
-                <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
+                <!-- <hr class="line txt-clr-bg" /> -->
+                <!-- <h4 class="txt-clr bold-txt header">LEARN MORE</h4> -->
               </div>
             </div>
           </div>
@@ -179,15 +179,15 @@
                 disinfection of surfaces
               </p>
               <div class="hbox centered-items">
-                <hr class="line txt-clr-bg" />
-                <h4 class="txt-clr bold-txt header">LEARN MORE</h4>
+                <!-- <hr class="line txt-clr-bg" /> -->
+                <!-- <h4 class="txt-clr bold-txt header">LEARN MORE</h4> -->
               </div>
             </div>
           </div>
         </div>
 
         <div class="hbox mg-a-s">
-          <a class="link-btn" href="#">SCHEDULE AN APPOINTMENT</a>
+          <a class="link-btn" href="#contact">SCHEDULE AN APPOINTMENT</a>
           <!-- <div class="spacer-s"></div> -->
           <!-- <a class="outlined-link-btn black" href="#">BROWSE SERVICES</a> -->
         </div>
@@ -241,7 +241,7 @@
               </div>
             </div>
 
-            <a class="link-btn half" href="#">SCHEDULE AN APPOINTMENT</a>
+            <a class="link-btn half" href="#contact">SCHEDULE AN APPOINTMENT</a>
           </div>
         </div>
       </div>
@@ -259,7 +259,7 @@
 
         <div class="hbox space-between mg-btm-m">
           <h2 class="large-txt half txt-clr">WHAT OUR CLIENTS SAY ABOUT US</h2>
-          <a class="link-btn" href="#">SCHEDULE AN APPOINTMENT</a>
+          <a class="link-btn" href="#contact">SCHEDULE AN APPOINTMENT</a>
         </div>
 
         <div id="tstimonials" class="hbox carousel">
@@ -338,7 +338,7 @@
         <h2 class="large-txt bold-txt">DETAILS FOR ALL VEHICLE CONDITIONS</h2>
 
         <p class="med-txt half mg-a-s">
-          We offer 3 main packages in our detailing garage, all of which will
+          We offer 5 main packages in our detailing garage, all of which will
           ensure that your vehicle becomes clean as possible. In addition to
           these packages, you will have the option to select any of our add-on
           packages.
@@ -684,6 +684,170 @@
     </section>
 
     <div class="right-triangle"></div>
+
+    <section id="contact">
+      <div class="vbox mg-btm-m">
+        <div class="vbox centered-items centered-txt mg-btm-m half-filled">
+          <h4 class="primary-clr header mg-btm-s">SCHEDULE AN APPOINTMENT</h4>
+          <h1 class="italics txt-clr large-txt bold-txt half">
+            GET IN TOUCH TODAY
+          </h1>
+          <p class="txt-clr half med-txt">
+            Book your appointment here. Expect responses within 1 business day.
+            All additional services you would like to request please add in the
+            extra information box.
+          </p>
+        </div>
+
+        <form
+          id="contact-form"
+          class="vbox centered-items two-col-grid med-txt section-pd reveal"
+          action="">
+          <input
+            type="text"
+            placeholder="FULL NAME"
+            pattern="\w+ \w+"
+            required />
+
+          <input type="email" placeholder="EMAIL" required />
+
+          <input
+            type="text"
+            placeholder="YEAR & MODEL"
+            pattern="\d{4} \w+"
+            required />
+
+          <input type="date" value="Preferred Day &#128197;" required />
+
+          <input type="tel" placeholder="PHONE NUMBER" required />
+
+          <div class="two-col-grid mg-a-m">
+            <fieldset
+              id="packages"
+              class="no-border vertical-radio-buttons med-txt">
+              <legend>
+                <div class="hbox centered-items">
+                  <span class="bold-txt">Packages</span>
+                  <img class="s-icon" src="assets/icons/package.svg" alt="" />
+                </div>
+              </legend>
+
+              <label for="clay-n-seal">
+                <input
+                  type="radio"
+                  name="packages"
+                  value="clay-n-seal"
+                  id="clay-n-seal"
+                  required />
+                Clay N' Seal</label
+              >
+
+              <label for="mini-detail">
+                <input
+                  type="radio"
+                  name="packages"
+                  value="mini-detail"
+                  id="mini-detail"
+                  required />
+                Mini Detail
+              </label>
+
+              <label for="full-detail">
+                <input
+                  type="radio"
+                  name="packages"
+                  value="full-detail"
+                  id="full-detail"
+                  required />
+                Full Detail</label
+              >
+
+              <label for="interior-detail">
+                <input
+                  type="radio"
+                  name="packages"
+                  value="interior-detail"
+                  id="interior-detail"
+                  required />
+                Interior Detail</label
+              >
+
+              <label for="maintenence-detail">
+                <input
+                  type="radio"
+                  name="packages"
+                  value="maintenence-detail"
+                  id="maintenence-detail"
+                  required />
+                Maintenence Detail</label
+              >
+            </fieldset>
+
+            <fieldset id="add-ons" class="no-border vertical-radio-buttons">
+              <legend>
+                <div class="hbox centered-items">
+                  <span class="bold-txt">Add Ons</span>
+                  <img
+                    class="s-icon"
+                    src="assets/icons/package-addons.svg"
+                    alt="" />
+                </div>
+              </legend>
+
+              <label for="pet-hair-removal">
+                <input
+                  type="radio"
+                  value="pet-hair-removal"
+                  id="pet-hair-removal"
+                  required />
+                Pet Hair Removal</label
+              >
+
+              <label for="trim-restorer">
+                <input
+                  type="radio"
+                  value="trim-restorer"
+                  id="trim-restorer"
+                  required />
+                Trim Restorer
+              </label>
+
+              <label for="engine-body-cleaning">
+                <input
+                  type="radio"
+                  value="engine-body-cleaning"
+                  id="engine-body-cleaning"
+                  required />
+                Engine Body Cleaning</label
+              >
+
+              <label for="small-stain-removal">
+                <input
+                  type="radio"
+                  value="small-stain-removal"
+                  id="small-stain-removal"
+                  required />
+                Small stain removal</label
+              >
+
+              <label for="maintenence-detail">
+                <input
+                  type="radio"
+                  value="maintenence-detail"
+                  id="maintenence-detail"
+                  required />
+                Maintenence Detail</label
+              >
+            </fieldset>
+          </div>
+        </form>
+        <input
+          class="als-c no-border link-btn"
+          type="submit"
+          form="contact-form"
+          value="SCHEDULE" />
+      </div>
+    </section>
 
     <footer id="footr" class="txt-clr secondary-clr-bg pd-m">
       <div class="hbox">

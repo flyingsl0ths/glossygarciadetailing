@@ -35,6 +35,10 @@ body {
   background-color: var(--text-color);
 }
 
+input:focus {
+  outline: none;
+}
+
 #nav {
   width: 100%;
   background: var(--secondary-color);
@@ -91,6 +95,18 @@ body {
 
 #index a {
   padding: 0.6em 0.6em 0.6em 0;
+}
+
+#contact-form > input {
+  border: none;
+  padding: 1em;
+  height: 25%;
+  border-bottom: 3px solid var(--secondary-color);
+  font-size: 1vw;
+}
+
+#contact-form > input:hover {
+  border-bottom-color: var(--primary-color);
 }
 
 .section-pd {
@@ -434,8 +450,54 @@ body {
   text-decoration: none;
 }
 
-.mg-btm-m {
-  margin-bottom: 3em;
+.vertical-radio-buttons > label {
+  display: block;
+  padding: 1em;
+  font-size: 1vw;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 3em;
+}
+
+.no-border {
+  border: none;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.no-resize {
+  resize: none;
+}
+
+.als-c {
+  align-self: center;
+}
+
+.centered-txt {
+  text-align: center;
+}
+
+.slide-in {
+  animation: slide 0.6s ease-out forwards;
+}
+
+.half-filled {
+  background-color: var(--secondary-color);
+  padding: 5em;
+}
+
+.jcentered-items {
+  justify-content: center;
+}
+
+.width-m {
+  width: 80%;
 }
 
 @keyframes slide {
@@ -448,18 +510,6 @@ body {
   }
 }
 
-@keyframes slide-in {
-  0% {
-    opacity: 0.5;
-    transform: translateY(100px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes slide-up {
   0% {
     transform: translateY(0);
@@ -467,15 +517,5 @@ body {
 
   100% {
     transform: translateY(-25px);
-  }
-}
-
-@keyframes color-change {
-  0% {
-    color: var(--text-color);
-  }
-
-  100% {
-    color: var(--primary-color);
   }
 }
